@@ -148,8 +148,8 @@ function showid(value) {
     eggblocks[i - 1].style.setProperty("background-color", "blue");
     eggblocks[i - 1].style.setProperty("transform", "translateY(220px)");
     eggblocks[i - 1].style.setProperty("opacity", "0");
-    //eggblocks[i - 1].style.setProperty("pointer-events", "none");
-    //eggblocks[i - 1].classList.remove("egg");
+    eggblocks[i - 1].style.setProperty("pointer-events", "none");
+    eggblocks[i - 1].classList.remove("egg");
     //eggblocks.splice(i - 1, 1);
   }
   testing.innerHTML = value.toString();

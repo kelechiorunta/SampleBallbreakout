@@ -141,14 +141,14 @@ createball();
 
 document.addEventListener("keydown", moveuser);
 
-function showGameOver(value) {
+function showid(value) {
   testing.style.setProperty("opacity", "0.8");
   testing.style.setProperty("transition", "all 7s ease");
   for (let i = 1; i <= eggblocks.length; i++) {
     eggblocks[i - 1].style.setProperty("background-color", "blue");
     eggblocks[i - 1].style.setProperty("transform", "translateY(220px)");
     eggblocks[i - 1].style.setProperty("opacity", "0");
-    eggblocks[i - 1].style.setProperty("pointer-events", "none");
+    //eggblocks[i - 1].style.setProperty("pointer-events", "none");
     //eggblocks[i - 1].classList.remove("egg");
     //eggblocks.splice(i - 1, 1);
   }
@@ -177,7 +177,7 @@ function checkcollision() {
     //(!(ballaxes[1] <= 20) && (( ballaxes[0] >= useraxes[0]) && (ballaxes[0] <= useraxes[0] + 200)))
     clearInterval(timerId);
     document.removeEventListener("keydown", moveuser);
-    showGameOver("GAME OVER");
+    showid("GAME OVER");
     console.log("GAME OVER");
     timerId = 0;
   }

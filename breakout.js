@@ -215,7 +215,7 @@ function checkeggcollision() {
       eggblocks[i - 1].style.setProperty("transform", "translateY(20px)");
       eggblocks[i - 1].style.setProperty("opacity", "0");
       eggblocks[i - 1].style.setProperty("transition", "all 5s ease");
-      eggblocks[i - 1].style.setProperty("transition", "all 3s ease");
+      //eggblocks[i - 1].style.setProperty("transition", "all 3s ease");
       //function clearegg(){
       //eggblocks[i-1].dataset.active = 'false'
       eggblocks[i - 1].classList.remove("egg");
